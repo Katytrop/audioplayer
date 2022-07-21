@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="div"></div>
+        <div class="player">
+            <div class="header-player">
+                <div class="song"></div>
+                <div class="cover">
+                    <img class="cover-img" src="img/cover1.jpg" alt="audio-img">
+                </div>
+            </div>
+            <audio class="audio" src="audio/AwolNation - Sail.mp3"></audio>
+            <div class="time">00:00</div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="buttons-block">
+                <div class="repeat">
+                    <img class="repeat-img" src="icons/repeat.svg" alt="">
+                </div>
+                <div class="btn prev"><img src="icons/prev.svg" alt="prev"></div>
+                <div class="btn play"><img class="img-src" src="icons/play.svg" alt="play"></div>
+                <div class="btn next"><img src="icons/next.svg" alt="next"></div>
+                <div class="volume-container">
+                    <input class="range" min="0" max="100" value="80" type="range" oninput="audio.volume = range.value/100">
+                    <div class="volume-img"><img src="icons/volume.svg" alt="volume"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">               
+                <div class="footer-itm"> 
+                    <a href="https://github.com/Katytrop">
+                    <img class= "logo-git" src="icons/github.svg" alt="github-logo">
+                    </a>
+                </div>
+                <div class="data"> &copy; by Katytrop 2022</div>
+                <div class="footer-itm"> 
+                    <a href="https://rs.school/js/">
+                    <img class= "logo-rss" src="icons/rs_school.svg" alt="rs-logo">
+                    </a>
+                </div>
+            </div>       
+        </div> 
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
